@@ -1,0 +1,68 @@
+﻿@page "/signup"
+
+<div class="registration">
+    <form action="login" id="reg_form" onsubmit="return @CheckData(); return false;">
+        <div class="text HeadersText">
+            Создание учётной записи
+        </div>
+        <div class="input_form">
+            <label>Фамилия*</label>
+            <input type="text" id="surname" placeholder="" pattern="[A-ZА-ЯЁ][A-zА-яЁё]{2,20}" class=" new_font" required>
+        </div>
+        <div class="input_form">
+            <label>Имя*</label>
+            <input type="text" id="name" placeholder="" pattern="[A-ZА-ЯЁ][a-zа-яё]{2,20}" class=" new_font" required>
+        </div>
+        <div class="input_form">
+            <label>E-mail*</label>
+            <input type="email" id="email" value="" placeholder="" class=" new_font" required onblur="return validateEmail()">
+        </div>
+        <div class="input_form">
+            <label>Логин</label>
+            <input type="text" id="login" placeholder="" class=" new_font" required>
+        </div>
+        <div class="input_form">
+            <label>Пароль*</label>
+            <input type="password" id="password" placeholder="" class=" new_font" @bind="@Pass1" required>
+        </div>
+        <div class="input_form">
+            <label>Повторите пароль*</label>
+            <input type="password" id="password_again" placeholder="" class=" new_font" @bind="@Pass2" required>
+        </div>
+        <div class="button-login-signup">
+            <button type="submit" class="HeadersText new_font">Зарегистрироваться</button>
+        </div>
+    </form>
+
+    @if (!passAreEquals)
+    {
+        <div class="HeadersText" style="margin-top: 20px">
+            <span class="oi oi-x" style="font-size: 24px"></span>
+            <h1>Пароли не совпадают</h1>
+        </div>
+    }
+
+</div>
+
+@code {
+
+    private bool passAreEquals = false;
+
+    private string Pass1 { get; set; }
+
+    private string Pass2 { get; set; }
+
+    private string CheckData()
+    {
+        if (Pass1 != null && Pass2 != null && Pass1.Equals(Pass2))
+        {
+            passAreEquals = true;
+            return "true";
+        }
+        else
+        {
+            passAreEquals = false;
+            return "false";
+        }
+    }
+}

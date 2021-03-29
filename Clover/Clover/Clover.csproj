@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\fonts\20326.otf" />
+    <None Include="wwwroot\images\abstract-blue.jpg" />
+    <None Include="wwwroot\images\back.png" />
+    <None Include="wwwroot\images\bird.jpg" />
+    <None Include="wwwroot\images\blue_bg.jpg" />
+    <None Include="wwwroot\images\clover.png" />
+    <None Include="wwwroot\images\coffee.jpg" />
+    <None Include="wwwroot\images\dino.jpg" />
+    <None Include="wwwroot\images\food.jpg" />
+    <None Include="wwwroot\images\it.jpg" />
+    <None Include="wwwroot\images\mountains.jpg" />
+    <None Include="wwwroot\images\profile_img.jpg" />
+  </ItemGroup>
+
+</Project>

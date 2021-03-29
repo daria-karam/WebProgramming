@@ -1,0 +1,23 @@
+﻿@page "/login"
+
+<div class="authorization">
+    <form action="profile">
+        <div class="input_form">
+            <input type="text" name="login" placeholder="Логин" class=" new_font" required>
+        </div>
+        <div class="input_form">
+            <input type="password" name="password" placeholder="Пароль" class=" new_font" required>
+        </div>
+        <div class="button-login-signup">
+            <button class="HeadersText new_font">Войти</button>
+        </div>
+    </form>
+    <div class="text HeadersText">
+        Нет учётной записи? Создай!
+    </div>
+    <form action="signup">
+        <div class="button-login-signup">
+            <button class="HeadersText new_font">Зарегистрироваться</button>
+        </div>
+    </form>
+</div>

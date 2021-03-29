@@ -1,0 +1,261 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+
+@font-face {
+    font-family: "InverkrugOutline";
+    src: local("Outline Inverkrug"), url("/fonts/20326.otf");
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-color: rgb(5, 39, 103);
+    background-position: center center;
+    background-size: cover;
+}
+
+.new_font {
+    font-family: "Outline Inverkrug", InverkrugOutline, "Montserrat", sans-serif;
+    font-size: 50px;
+    text-transform: lowercase;
+}
+
+.HeadersText {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.color_header_anim {
+    transition: color 0.2s linear;
+}
+
+    .color_header_anim:hover {
+        color: rgb(63, 249, 255);
+    }
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 4em;
+}
+
+.About {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    color: white;
+}
+
+.Container_style {
+    margin: 30px auto;
+    border: 2px solid rgb(28, 0, 151);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #A9A9A9;
+}
+
+.Backlighting_anim {
+    transition: box-shadow 0.2s linear;
+}
+
+    .Backlighting_anim:hover {
+        box-shadow: 0 0 45px #A9A9A9;
+    }
+
+.Box {
+    height: 30em;
+    text-align: center;
+    width: 95%;
+    background-color: black;
+    background-position: top center;
+    background-size: cover;
+}
+
+.post_preview {
+    width: 90%;
+    margin-top: 30px;
+    box-sizing: content-box;
+    display: block;
+    float: none;
+    padding: 20px 20px;
+    line-height: 21px;
+    position: static;
+}
+
+.post_full_title {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+.post_title_link {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+.post-meta {
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.user_nickname, .post_time {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.post_text img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.post_text {
+    font-size: 24px;
+}
+
+.btn {
+    padding: 0 13px;
+    height: 36px;
+    border-radius: 5px;
+    font-size: 24px;
+    border: 2px solid rgb(28, 0, 151);
+    background-color: #02f;
+    color: white;
+    text-decoration: none;
+}
+
+.Profile {
+    margin-top: 30px;
+    box-sizing: content-box;
+    display: block;
+    float: none;
+    padding: 20px 20px;
+    line-height: 21px;
+    position: static;
+    width: 90%;
+    height: 15em;
+}
+
+.Profile_img {
+    float: left;
+}
+
+    .Profile_img img {
+        vertical-align: middle;
+        max-width: 15em;
+        height: auto;
+    }
+
+.Profile_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    float: initial;
+    margin-left: 17em;
+}
+
+.user_from_post_link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+    .user_from_post_link:hover {
+        color: rgb(63, 249, 255);
+    }
+
+.authorization, .registration {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.input_form input {
+    text-align: center;
+    font-size: 32px;
+    height: 48px;
+    width: 100%;
+    border: 2px solid rgb(28, 0, 151);
+    border-width: 3px;
+    border-radius: 10px;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    text-transform: none;
+}
+
+.button-login-signup button {
+    background-color: transparent;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    height: 64px;
+    width: 100%;
+    border: 2px solid white;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+.text {
+    margin-top: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+}
+
+input:valid {
+    border-color: rgb(5, 95, 5);
+}
+
+input:invalid {
+    border-color: rgb(163, 4, 4);
+}
+
+input:focus {
+    box-shadow: 0 0 30px #A9A9A9;
+}
+
+.input_form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    .input_form label {
+        margin: auto;
+        text-align: center;
+        font-family: "Outline Inverkrug", InverkrugOutline, "Montserrat", sans-serif;
+        text-transform: lowercase;
+        font-size: 32px;
+        margin-right: 20px;
+    }
+
+.registration {
+    width: 60%;
+}
+
+    .registration .text {
+        margin-top: 60px;
+        font-family: "Outline Inverkrug", InverkrugOutline, "Montserrat", sans-serif;
+        text-transform: lowercase;
+        font-size: 40px;
+    }
+
+    .registration .input_form label {
+        width: 25%;
+        text-align: right;
+    }
+
+    .registration .input_form input {
+        width: 75%;
+        text-align: left;
+        padding-left: 15px;
+    }

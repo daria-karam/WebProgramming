@@ -1,0 +1,16 @@
+﻿<NavLink href=@SectionRef style="text-decoration: none" class="theme_link">
+    <div class="Box Container_style Backlighting_anim" style="background-image:url(@SectionImage)">
+        <h3 class="HeadersText new_font"><br>@SectionName<br></h3>
+    </div>
+</NavLink>
+
+@code {
+    [Parameter]
+    public string SectionName { get; set; }
+
+    [Parameter]
+    public string SectionRef { get; set; }
+
+    [Parameter]
+    public string SectionImage { get; set; }
+}
